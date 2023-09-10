@@ -1,17 +1,17 @@
 package guru.springframework.spring6di.controllers;
 
-import guru.springframework.spring6di.services.DataSourceService;
+import guru.springframework.spring6di.services.EnvironmentService;
 import org.springframework.stereotype.Controller;
 
 @Controller
-public class DataSourceController {
-    private final DataSourceService dataSourceService;
+public class EnvironmentController {
+    private final EnvironmentService environmentService;
 
-    public DataSourceController(DataSourceService dataSourceService) {
-        this.dataSourceService = dataSourceService;
+    public EnvironmentController(EnvironmentService environmentService) {
+        this.environmentService = environmentService;
     }
 
-    public String getDataSource() {
-        return this.dataSourceService.getSource();
+    public String getEnvironment() {
+        return this.environmentService.getEnv();
     }
 }

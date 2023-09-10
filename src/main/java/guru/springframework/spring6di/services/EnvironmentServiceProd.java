@@ -3,9 +3,9 @@ package guru.springframework.spring6di.services;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
-@Profile("PROD")
+@Profile("prod")
 @Service
-public class ProdEnvironmentService implements EnvironmentService {
+public class EnvironmentServiceProd implements EnvironmentService {
     @Override
     public String getEnv() {
         return "Production DataSource";
