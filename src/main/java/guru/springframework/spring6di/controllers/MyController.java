@@ -6,7 +6,6 @@ import org.springframework.stereotype.Controller;
 
 @Controller
 public class MyController {
-
     private final GreetingService greetingService;
 
     public MyController() {
